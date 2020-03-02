@@ -1,0 +1,26 @@
+{
+  "name": "Projectgraphql",
+  "version": "1.0.0",
+  "description": "Test GraphQL from https://github.com/r-spacex/SpaceX-API and clip: https://www.youtube.com/watch?v=SEMTj8w04Z8  doc:https://github.com/voa2000/react-graphql",
+  "main": "schema.js",
+  "dependencies": {
+    "apollo-server": "^2.10.1",
+    "axios": "^0.19.2",
+    "concurrently": "^5.1.0",
+    "cor": "0.0.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client"
+  },
+  "author": "Warunee Sermpanichakij",
+  "license": "ISC"
+}
